@@ -1,0 +1,22 @@
+<nav class=" navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"> <a class="nav-link active" routerLink="auth">Authentificate</a></li>
+        <li routerLinkActive="active"><a class="nav-link active" routerLink="appareils">Appareils</a></li>
+        <li routerLinkActive="active"> <a class = 'nav-link active' routerLink="edit">Nouvel Appareil</a></li>
+        <li routerLinkActive="active"> <a class = 'nav-link active' routerLink="users">Utilisateurs</a></li>
+     
+      </ul>
+        <div class="navbar-right">Vous etes connecte depuis {{secondes}} secondes </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <router-outlet></router-outlet>
+       
+      </div>
+    </div>
+  </div>
+</nav>
